@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Placement Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .result {
+            font-size: 1.5em;
+            color: #4CAF50;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Placement Prediction</h2>
+        <form action="/predict" method="post">
+            <!DOCTYPE html>
+
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            margin: 30px auto;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        input {
+            width: 90%;
+            padding: 8px;
+            margin: 5px;
+        }
+        button {
+            padding: 10px;
+            background: red;
+            color: white;
+            border: none;
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<h2>Heart Disease Prediction</h2>
+
+<form action="/predict" method="post">
+
+    <input type="number" name="age" placeholder="Age" required>
+    <input type="number" name="sex" placeholder="Sex (0=female,1=male)" required>
+    <input type="number" name="cp" placeholder="Chest Pain Type (0-3)" required>
+    <input type="number" name="trestbps" placeholder="Resting Blood Pressure" required>
+    <input type="number" name="chol" placeholder="Cholesterol" required>
+    <input type="number" name="fbs" placeholder="Fasting Blood Sugar (0/1)" required>
+    <input type="number" name="restecg" placeholder="Rest ECG (0-2)" required>
+    <input type="number" name="thalach" placeholder="Max Heart Rate" required>
+    <input type="number" name="exang" placeholder="Exercise Angina (0/1)" required>
+    <input type="number" step="any" name="oldpeak" placeholder="Oldpeak" required>
+    <input type="number" name="slope" placeholder="Slope (0-2)" required>
+    <input type="number" name="ca" placeholder="Number of Major Vessels (0-3)" required>
+    <input type="number" name="thal" placeholder="Thal (0-3)" required>
+
+    <!-- Extra 2 features (to make total 15 if your model needs 15) -->
+    <input type="number" name="feature14" placeholder="Extra Feature 14" required>
+    <input type="number" name="feature15" placeholder="Extra Feature 15" required>
+
+    <button type="submit">Predict</button>
+</form>
+</body>
+</html>
+
+        </form>
+        {% if prediction_text %}
+        <div class="result">{{ prediction_text }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
